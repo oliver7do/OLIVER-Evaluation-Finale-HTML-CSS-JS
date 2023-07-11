@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oli.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Clique aqui</button>
+    
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+    </div>
+
+    <form>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+    
+        <label for="data-entrada">Data de Entrada:</label>
+        <input type="date" id="data-entrada" name="data-entrada" placeholder="Data de Entrada" required>
+    
+        <label for="data-saida">Data de Saída:</label>
+        <input type="date" id="data-saida" name="data-saida" placeholder="Data de Saída" required>
+    
+        <button type="submit">Procurar Disponibilidade</button>
+    </form>
+
+
+    
+
+    
+    <script src="oli.js">
+
+        $("#toggleButton").click(function () {
+                $(".myDiv").slideToggle();
+            });
+            
+        function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+        
+    </script>
+</body>
+</html>
